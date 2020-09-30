@@ -1,1 +1,31 @@
+body {
+    height: 100vh;
+}
 
+section {
+    height: 100%;
+    background-color: #FAFAD2;
+    padding: 3em;
+}
+
+.url-form{
+    padding: 3em;
+}
+
+
+input.error,
+select.error,
+textarea.error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.error-message {
+  color: #B94A48;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
