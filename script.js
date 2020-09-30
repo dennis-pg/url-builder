@@ -31,7 +31,7 @@ $("#team").keyup(function() {
 
 function updateGeneratedURL(){
     let valuesEmpty = url === "" && source === "" && team === "";
-    let valuesValidated = (new Bouncer()).validateAll(document.querySelector('#form')).length === 0;
+    let valuesValidated = (new Bouncer()).validateAll(document.querySelector('form')).length === 0;
     $("#generated-url").val(valuesEmpty ? "" : `${url}#src=${source}&team=${team}`);
     $("#shorten-btn").css("display", valuesEmpty || !valuesValidated ? "none" : "inline-block");
 }

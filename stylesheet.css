@@ -12,6 +12,35 @@ section {
     padding: 3em;
 }
 
+#form-div {
+  padding: 3em; 
+  display: inline-block
+}
+
+#form-div form {
+  width: 50vw; 
+  display:inline-block;
+}
+
+#result-div{
+  padding: 3em; 
+  background-color: #F7F7F7;
+}
+
+#result-div div{
+  padding: 1em;
+}
+
+#generated-url {
+  width: 70vw;
+}
+
+#shorten-btn {
+  display: none
+}
+
+
+
 
 input.error,
 select.error,

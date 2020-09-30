@@ -19,8 +19,8 @@
     <section>        
         <div class="url-form" style="margin-top: 0; text-align: center;">
             <h4>Enter URL and parameters</h3>
-            <div id="form" class="row" style="padding: 3em; display: inline-block">
-                <form id="form" style="width: 50vw; display:inline-block;" data-parsley-validate>
+            <div id="form-div" class="row" style="padding: 3em; display: inline-block">
+                <form>
                     <div class="form-group">
                         <label for="url">URL</label>
                         <input class="form-control" id="url" type="url" data-parsley-trigger="keyup" placeholder="Enter URL" >
@@ -36,20 +36,18 @@
                   </form>
             </div>
 
-            <div class="row" style="padding: 3em; background-color: #F7F7F7;">
-                <div class="col-md-12" style="padding: 1em;">
+            <div id="result-div" class="row">
+                <div class="col-md-12">
                     <h4>Generated Url</h4>
                 </div>
-                <div class="col-md-12" style="padding: 1em;">
-                    <input id="generated-url" readonly style="width: 70vw"/>
+                <div class="col-md-12">
+                    <input id="generated-url" readonly />
                 </div>
                 <div class="col-md-12" style="padding: 1em;">
                     <button id="copy-btn" data-clipboard-target="#generated-url">Copy URL</button>
-                    <button id="shorten-btn" style="display: none">Shorten</button>
+                    <button id="shorten-btn">Shorten</button>
                 </div>
-                <div class="col-md-12" style="padding: 1em;">
-                </div>
-
+                
             </div>
         </div>
     </section>
